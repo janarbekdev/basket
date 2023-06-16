@@ -1,0 +1,74 @@
+#product {
+  padding: 100px 0;
+
+  .product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &--block {
+      margin: 10px 0;
+      background: gold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 20rem;
+      height: 25rem;
+      transition: 1s;
+      border: 2px solid blue;
+
+      &__heart {
+        animation: App-logo-spin infinite 2s linear;
+         transition: 2s;
+        @keyframes App-logo-float {
+          0% {
+            opacity: 0.2;
+          }
+          50% {
+
+            opacity: 3;
+
+          } 100%{
+
+                        opacity: 1;
+                      }
+        }
+      }
+
+      &:hover {
+        border: 2px dashed blue;
+        background: white;
+      }
+
+      h1 {
+        font-size: 20px;
+        padding: 10px 0;
+        color: blue;
+        width: 300px;
+      }
+
+      img {
+        width: 48%;
+      }
+
+      &__btn {
+        &--1 {
+          margin: 10px 10px;
+          width: 100px;
+          height: 40px;
+          border-radius: 10px;
+        }
+
+        &--2 {
+
+          margin: 10px 10px;
+          width: 100px;
+          height: 40px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

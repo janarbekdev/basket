@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from "./Companent/Header/Header";
+import {Route, Routes} from "react-router-dom";
+import Product from "./Companent/Product/Product";
+import Basket from "./Companent/Basket/Basket";
+import Favorite from "./Companent/Favorite/Favorite";
+import Home from "./Companent/Home/Home";
+import Doto from "./Companent/Doto/Doto";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Routes>
+        <Route path={'/'} element={<Home/>} />
+        <Route path={'/todo'} element={<Doto/>}/>
+        <Route path={'/product'} element={<Product/>} />
+        <Route path={'/basket'} element={<Basket/>} />
+        <Route path={'/favorite'} element={<Favorite/>} />
+      </Routes>
     </div>
   );
 }

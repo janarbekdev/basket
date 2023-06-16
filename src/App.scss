@@ -1,0 +1,20 @@
+@import "src/Companent/Favorite/Favorite";
+@import "src/Companent/Basket/Basket";
+@import "src/Companent/Product/Product";
+@import "src/Companent/Header/Header";
+@import "src/Companent/Home/Home";
+@import "src/Companent/Doto/Doto";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}

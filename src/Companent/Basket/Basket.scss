@@ -1,0 +1,48 @@
+#basket{
+  .basket{
+    &--block{
+        display: flex;
+       align-items: center;
+      justify-content: space-between;
+        flex-wrap: wrap;
+      &__pink {
+          border: 1px solid blue;
+          display: flex;
+         align-items: center;
+         justify-content: space-around;
+        width: 88rem;
+        height: 15rem;
+         border-radius: 10px;
+        margin: 10px 0;
+          h1{
+            text-align: abs(1rem);
+          }
+         &--btn{
+           width: 90px;
+           border-radius: 10px;
+           background: gold;
+           height: 40px;
+           transition: 1s;
+           &:hover{
+             background: blue;
+             color: white;
+           }
+         }
+        button{
+          width: 90px;
+           border-radius: 10px;
+           background: gold;
+          height: 40px;
+            transition: 1s;
+           &:hover{
+               background: blue;
+                  color: white;
+           }
+        }
+        img{
+          width: 10%;
+        }
+      }
+    }
+  }
+}
